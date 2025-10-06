@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice All-in-One</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+  <!-- 1. Toggle Text -->
+  <div class="box">
+    <h2>1.Show/Hide text</h2>
+    <button onclick="toggleText()">Hide Text!</button>
+    <p id="toggleText">This is Jenia Akter. Student of BdCallling IT Ltd.</p>
+  </div>
+
+  <!-- 2. Show Text from Input -->
+  <div class="box">
+    <h2>2. Show Text from Input</h2>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <button onclick="showText()">Show</button>
+    <p id="textOutput"></p>
+  </div>
+
+  <!-- 3. Add & Delete Items -->
+  <div class="box">
+    <h2>3. Add & Delete Items</h2>
+    <input type="text" id="itemInput" placeholder="Enter item">
+    <button onclick="addItem()">Add</button>
+    <ul id="itemList"></ul>
+  </div>
+
+  <!-- 4. Show Previous & Next -->
+  <div class="box">
+    <h2>4. Show previous & Next</h2>
+    <div id="pageContent" style="margin-bottom:10px;"></div>
+    <button onclick="prevPage()">Previous</button>
+    <button onclick="nextPage()">Next</button>
+  </div>
+
+  <!-- 5. Hide/Show Image -->
+  <div class="box">
+    <h2>5. Hide/Show Image</h2>
+    <button onclick="toggleImage()">Show image</button><br><br>
+    <img id="toggleImage" src="photo.jpg" alt="Placeholder Image" style="width: 120px; height: auto;" alt="Photo">
+  </div>
+
+  <!-- 6. Typing -->
+  <div class="box">
+    <h2>6. Typing</h2>
+    <input type="text" id="liveInput" oninput="livePreview()" placeholder="Start typing...">
+    <p id="liveOutput"></p>
+  </div>
+  
+</body>
+</html>
